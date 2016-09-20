@@ -1,9 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-//TODO: Cache in private variable the rigidbody component....
-//Get Component is heavy....
-
 public class Slingshot : MonoBehaviour
 {
 	#region Fields
@@ -29,8 +26,12 @@ public class Slingshot : MonoBehaviour
 		launchPoint.SetActive(false);
 		launchPos = launchPointTrans.position;
 	}
+		
+	void Start()
+	{
 
-	//TODO: Turn on script based on mouse enter/exit instead...(ENABLED = true/false)
+	}
+		
 	void OnMouseEnter()
 	{
 		launchPoint.SetActive(true);
@@ -54,12 +55,6 @@ public class Slingshot : MonoBehaviour
 
 		//Set it to isKinematic for now
 		projectile.GetComponent<Rigidbody>().isKinematic = true;
-	}
-
-	// Use this for initialization
-	void Start()
-	{
-	
 	}
 	
 	// Update is called once per frame
