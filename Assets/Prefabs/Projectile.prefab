@@ -92,15 +92,15 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Constraints: 120
+  m_CollisionDetection: 1
 --- !u!135 &135000010115676616
 SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012900063758}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: c3b62d407b0404c76b21ef50d666c61b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2

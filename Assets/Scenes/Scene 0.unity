@@ -228,6 +228,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 754591688}
   - 135: {fileID: 754591689}
+  - 114: {fileID: 754591690}
   m_Layer: 0
   m_Name: Slingshot
   m_TagString: Untagged
@@ -264,6 +265,24 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 3
   m_Center: {x: 0, y: 4, z: 0}
+--- !u!114 &754591690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 754591687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcadda0d307742a5b0903d61b1b75b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabProjectile: {fileID: 1000012900063758, guid: 05590cdd189a745f3a0b990424d538e7,
+    type: 2}
+  velocityMult: 10
+  launchPoint: {fileID: 0}
+  launchPos: {x: 0, y: 0, z: 0}
+  projectile: {fileID: 0}
+  aimingMode: 0
 --- !u!1 &1295183223
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,8 +422,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1616309174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -10, z: 0}
-  m_LocalScale: {x: 100, y: 1, z: 1}
+  m_LocalPosition: {x: 100, y: -10, z: 0}
+  m_LocalScale: {x: 400, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -417,6 +436,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1672686373}
+  - 122: {fileID: 1672686374}
   m_Layer: 0
   m_Name: LaunchPoint
   m_TagString: Untagged
@@ -437,6 +457,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 754591688}
   m_RootOrder: 3
+--- !u!122 &1672686374
+Halo:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1672686372}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4290756543
+  m_Size: 1
 --- !u!1 &1939210721
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,6 +480,7 @@ GameObject:
   - 92: {fileID: 1939210724}
   - 124: {fileID: 1939210723}
   - 81: {fileID: 1939210722}
+  - 114: {fileID: 1939210727}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -524,6 +556,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1939210727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1939210721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa2b77a00c1342ec9a1dcd15eec6b2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poi: {fileID: 0}
+  camZ: 0
 --- !u!1 &2019558764
 GameObject:
   m_ObjectHideFlags: 0
