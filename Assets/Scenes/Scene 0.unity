@@ -90,6 +90,34 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &248807478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 248807479}
+  m_Layer: 0
+  m_Name: CloudAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &248807479
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 248807478}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.675795, y: -0.41890764, z: 0.913105}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
 --- !u!1 &317225439
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,6 +509,7 @@ GameObject:
   - 124: {fileID: 1939210723}
   - 81: {fileID: 1939210722}
   - 114: {fileID: 1939210727}
+  - 114: {fileID: 1939210728}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -567,8 +596,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa2b77a00c1342ec9a1dcd15eec6b2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  easing: 0.05
+  minXY: {x: 0, y: 0}
   poi: {fileID: 0}
   camZ: 0
+--- !u!114 &1939210728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1939210721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ef96090808254804a90e46483937685, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cloudAnchor: {fileID: 248807478}
+  numClouds: 40
+  cloudPrefabs:
+  - {fileID: 1000012102910232, guid: 5461eb1a54cf64c88b6ed0e3591cac0c, type: 2}
+  - {fileID: 1000011992240152, guid: 59c407d2871dc4b10a41a712363bebbf, type: 2}
+  - {fileID: 1000011835304654, guid: b56f0eae2412547b8b8a7e81e804174f, type: 2}
+  - {fileID: 1000012110777724, guid: 5d274687b3592468c98aa555ef0777d2, type: 2}
+  - {fileID: 1000012359165832, guid: 47860471dd3754c65a9d98bd9a3adf29, type: 2}
+  cloudPosMin: {x: -50, y: -5, z: 10}
+  cloudPosMax: {x: 150, y: 100, z: 10}
+  cloudScaleMin: 1
+  cloudScaleMax: 5
+  cloudSpeedMult: 0.5
+  cloudInstances: []
 --- !u!1 &2019558764
 GameObject:
   m_ObjectHideFlags: 0
