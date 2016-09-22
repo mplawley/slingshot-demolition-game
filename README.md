@@ -2,7 +2,8 @@
 
 This is a clone of an Angry Birds-style game. Here is an example image of gameplay:
 
-![alt tag](https://github.com/mplawley/apple-picker/blob/master/apple-picker%20example.jpg)
+![alt tag](https://github.com/mplawley/slingshot-demolition-game/blob/master/MissionDemolitionExample.jpg)
+
 
 # installation and play
 
