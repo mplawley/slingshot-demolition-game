@@ -4,6 +4,7 @@ using System.Collections;
 public class Slingshot : MonoBehaviour
 {
 	#region Fields
+	static public Slingshot S; //Singleton
 
 	[Header("Inspector fields")]
 	public GameObject prefabProjectile;
@@ -21,6 +22,10 @@ public class Slingshot : MonoBehaviour
 
 	void Awake()
 	{
+		//Set the slingshot singleton
+		S = this;
+
+		//Set launch fields
 		Transform launchPointTrans = transform.Find("LaunchPoint");
 		launchPoint = launchPointTrans.gameObject;
 		launchPoint.SetActive(false);
