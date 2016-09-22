@@ -4,7 +4,7 @@ using System.Collections;
 public class Slingshot : MonoBehaviour
 {
 	#region Fields
-	static public Slingshot S; //Singleton
+	public static Slingshot S; //Singleton
 
 	[Header("Inspector fields")]
 	public GameObject prefabProjectile;
@@ -103,6 +103,7 @@ public class Slingshot : MonoBehaviour
 			projectile.GetComponent<Rigidbody>().velocity = -mouseDelta * velocityMult;
 			FollowCam.S.poi = projectile;
 			projectile = null;
+			MissionDemolition.ShotFired();
 		}
 	}
 
