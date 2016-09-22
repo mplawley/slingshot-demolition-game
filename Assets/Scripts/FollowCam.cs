@@ -4,7 +4,7 @@ using System.Collections;
 public class FollowCam : MonoBehaviour
 {
 	#region Fields
-	static public FollowCam S; //singleton
+	public static FollowCam S; //singleton
 
 	[Header("Inspector fields")]
 	public float easing = 0.05f;
